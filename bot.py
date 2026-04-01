@@ -1,7 +1,8 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8525714921:AAG1-8DF6mHHha8GhEC_026HzRqPCnBnaVg"
+import os
+TOKEN = os.getenv("TOKEN")
 
 # Menu nút bấm
 keyboard = [
